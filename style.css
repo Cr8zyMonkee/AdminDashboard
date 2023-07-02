@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 4fr;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    
+}
+
+.main-content {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.nav-tabs {
+    display: grid;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.messages-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.community-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.settings-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.support-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.privacy-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
