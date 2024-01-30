@@ -21,7 +21,8 @@ html {
     grid-column-start: 1;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 13% 35% 15%;
+
 }
 
 .main-content {
@@ -46,6 +47,8 @@ html {
 /* Nav Tab Elements */
 .nav-tabs {
     display: grid;
+    height: fit-content;
+    gap: 35px;
 }
 
 .home-container {
@@ -80,7 +83,9 @@ html {
 
 .support-tabs {
     display: grid;
-    margin-top: 50px;
+    height: fit-content;
+    gap: 35px;
+    margin-top: 5px;
 }
 
 /* Logo Elements */
@@ -89,6 +94,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin-top: 15%;
+    height: fit-content;
 }
 
 .logo-text {
@@ -142,12 +148,13 @@ html {
 
 .ann-wrapper {
     width: 85%;
-    height: 85%;
+    height: 84%;
     background-color: white;
     border-radius: 10% / 5%;
     padding: 25px;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 2px 1fr 2px 1fr;
+    margin-top: 20px;
 }
 
 .ann {
@@ -157,7 +164,12 @@ html {
     overflow-wrap: normal;
     display: grid;
     grid-template-rows: 1fr 3fr;
-    margin-top: 20px
+}
+
+.row-border {
+    border-top: 1px lightgray solid;
+    grid-column: 1 / 3;
+    margin-bottom: 5px;
 }
 
 /* Trending */
