@@ -3,64 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Admin Dashboard</title>
+     
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="logo-container">
-                <div class="logo"></div>
+                <div class="logo">
+                    <img src="assets/icons/view-dashboard-outline.svg" alt="squares arranged to represent a dashboard with panels">
+                </div>
                 <div class="logo-text">Dashboard</div>
             </div>
 
             <div class="nav-tabs">
                 <div class="home-container">
-                    <div class="home-img"></div>
-                    <div class="home-text">Home</div>
+                    <div id="home-img" class="nav-icons">
+                        <img src="/assets/icons/home-outline.svg" alt="image of a house">
+                    </div>
+                    <div class="nav-text">Home</div>
                 </div>
 
                 <div class="profile-container">
-                    <div class="profile-img"></div>
-                    <div class="profile-text">Profile</div>
+                    <div id="profile-img" class="nav-icons">
+                        <img src="/assets/icons/card-account-details-outline.svg" alt="">
+                    </div>
+                    <div class="nav-text">Profile</div>
                 </div>
 
                 <div class="messages-container">
-                    <div class="messages-img"></div>
-                    <div class="messages-text">Messages</div>
+                    <div id="messages-img" class="nav-icons">
+                        <img src="/assets/icons/message-outline.svg" alt="Image of a message bubble">
+                    </div>
+                    <div class="nav-text">Messages</div>
                 </div>
 
                 <div class="history-container">
-                    <div class="history-img"></div>
-                    <div class="history-text">History</div>
+                    <div id="history-img" class="nav-icons">
+                        <img src="/assets/icons/history.svg" alt="image of a clock with an arrow going counter clockwise">
+                    </div>
+                    <div class="nav-text">History</div>
                 </div>
 
                 <div class="tasks-container">
-                    <div class="tasks-img"></div>
-                    <div class="tasks-text">Tasks</div>
+                    <div id="tasks-img" class="nav-icons">
+                        <img src="/assets/icons/format-list-checks.svg" alt="a checklist with tasks and bulletpoints">
+                    </div>
+                    <div class="nav-text">Tasks</div>
                 </div>
 
                 <div class="community-container">
-                    <div class="community-img"></div>
-                    <div class="community-text">Community</div>
+                    <div id="community-img" class="nav-icons">
+                        <img src="/assets/icons/account-group-outline.svg" alt="group of people huddled together">
+                    </div>
+                    <div class="nav-text">Community</div>
                 </div>
             </div>
 
             <div class="support-tabs">
                 <div class="settings-container">
-                    <div class="settings-img"></div>
-                    <div class="settings-text">Settings</div>
+                    <div id="settings-img" class="nav-icons">
+                        <img src="/assets/icons/cog-outline.svg" alt="image of a cog gear">
+                    </div>
+                    <div class="nav-text">Settings</div>
                 </div>
 
                 <div class="support-container">
-                    <div class="support-img"></div>
-                    <div class="support-text">Support</div>
+                    <div id="support-img" class="nav-icons">
+                        <img src="/assets/icons/lifebuoy.svg" alt="image of a life buoy">
+                    </div>
+                    <div class="nav-text">Support</div>
                 </div>
 
                 <div class="privacy-container">
-                    <div class="privacy-img"></div>
-                    <div class="privacy-text">Privacy</div>
+                    <div id="privacy-img" class="nav-icons">
+                        <img src="/assets/icons/account-lock-outline.svg" alt="an image of a person with a lock in the bottom right corner">
+                    </div>
+                    <div class="nav-text">Privacy</div>
                 </div>
             </div>
         </div>
@@ -68,20 +92,24 @@
         <div class="header">
 
             <div class="search">
-                <div class="search-button"><button>search image</button></div>
+            
+                <button class="search-button"><img src="/assets/icons/magnify.svg" alt="an image of a maginifying glass" width="25px" height="25px"></button>
+
                 <div class="searchbar"></div>
             </div>
 
             <div class="user-info">
-                <div class="notifications">notification pic</div>
-                <div class="profile-pic" id="account-profile-pic">pic</div>
-                <div class="current-user" id="signed-in-user">user</div>
+                <div class="notifications">
+                    <img src="/assets/icons/bell-badge-outline.svg" alt="image of a bell ringing" width="30px" height="30px">
+                </div>
+                <div class="profile-pic" id="account-profile-pic"><img src="/assets/ProfilePictures/Beanie.jpg" alt="picture of a brick character wearing a beanie" width="45px" height="45px"></div>
+                <div class="current-user" id="signed-in-user">Alex Nunez</div>
             </div>
 
             <div class="welcome-user">
-                <div class="profile-pic" id="welcome-profile-pic">pic</div>
+                <div class="profile-pic" id="welcome-profile-pic"><img src="/assets/ProfilePictures/Beanie.jpg" alt="picture of a brick character wearing a beanie" width="70" height="70"></div>
                 <div class="welcome-message">Hi there,</div>
-                <div class="current-user" id="current-username">user</div>
+                <div class="current-user" id="current-username">@cookiecrisp23</div>
             </div>
 
             <div class="user-buttons">
@@ -101,27 +129,75 @@
 
 
                     <div class="displayedProject">
-
+                        <div class="user-project-name">Distortion Audio Plug In</div>
+                        <div class="project-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis dignissimos nisi reiciendis, ea iure similique quo voluptatibus dolorum eveniet officia pariatur quaerat id.
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
 
                     <div class="displayedProject">
-
+                        <div class="user-project-name">Media Encoder</div>
+                        <div class="project-description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, ab dolores voluptatum tempore distinctio blanditiis labore expedita. 
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
 
                     <div class="displayedProject">
-
+                        <div class="user-project-name">Budget Calculator</div>
+                        <div class="project-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error sapiente soluta numquam dolore obcaecati deleniti iusto ipsum!
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
 
                     <div class="displayedProject">
-
+                        <div class="user-project-name">Dog Social Media</div>
+                        <div class="project-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
 
                     <div class="displayedProject">
+                        <div class="user-project-name">RPG Game</div>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ipsa provident consectetur saepe expedita.
 
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share"></div>
+                        </div>
                     </div>
 
                     <div class="displayedProject">
+                        <div class="user-project-name">Stock Video</div>
+                        <div class="project-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati culpa ducimus eius in iste pariatur, ad vel consequuntur at quam mollitia dolorem magnam.
 
+                        </div>
+                        <div class="user-project-icons">
+                            <div class="favorite"></div>
+                            <div class="viewed"></div>
+                            <div class="share">3</div>
+                        </div>
                     </div>
 
 
@@ -139,8 +215,7 @@
 
                         <div class="ann-header">Site Maintenance</div>
 
-                        <div class="ann-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laudantium
-                            molestiae...</div>
+                        <div class="ann-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad laudantiummolestiae...</div>
 
                     </div>
 
@@ -150,8 +225,7 @@
 
                         <div class="ann-header">Community Share Day</div>
 
-                        <div class="ann-body">Corporis, nemo consequuntur error accusamus reprehenderit eius quae di....
-                        </div>
+                        <div class="ann-body">Corporis, nemo consequuntur error accusamus reprehenderit eius</div>
 
                     </div>
 
@@ -161,8 +235,7 @@
 
                         <div class="ann-header">Updated Privacy Policy</div>
 
-                        <div class="ann-body">Perferendis similique possimus autem fugit, dicta quasi quam beatae tempor
-                            id repudiandae deserunt qui provident unde ullam al....</div>
+                        <div class="ann-body">Perferendis similique possimus autem fugit, dicta quasi quam beatae tempor id </div>
 
 
                     </div>
@@ -171,35 +244,35 @@
 
             <div class="trending">
 
-                <div class="contentLabels">Trending</div>
+                <div id="trending-label" class="contentLabels">Trending</div>
 
                 <div class="trending-wrapper">
                     <div id="user1" class="trending-user">
-                        <div id="user-pic1" class="user-pic">1</div>
+                        <div id="user-pic1" class="user-pic"><img src="/assets/ProfilePictures/Bib.jpg" alt="image of a brick character wearing a bib" width="45px" height="45px"></div>
                         <div id="trending-username1" class="trending-username">@Jose</div>
-                        <div id="trending-project1" class="trending-project">Gaming AI</div>
+                        <div id="trending-project1" class="trending-project">Vulture Gaming AI</div>
                     </div>
 
                     <div class="column-border"></div>
 
                     <div id="user2" class="trending-user">
-                        <div id="user-pic2" class="user-pic">1</div>
+                        <div id="user-pic2" class="user-pic"><img src="/assets/ProfilePictures/Chef.jpg" alt="image of a brick character wearing a chef outfit" width="45px" height="45px"></div>
                         <div id="trending-username2" class="trending-username">@MrDude</div>
-                        <div id="trending-project2" class="trending-project">Big Dawg Audio Synthesizer</div>
+                        <div id="trending-project2" class="trending-project">Big Dawg Audio Synth</div>
                     </div>
 
                     <div class="column-border"></div>
 
                     <div id="user3" class="trending-user">
-                        <div id="user-pic3" class="user-pic">1</div>
+                        <div id="user-pic3" class="user-pic"><img src="/assets/ProfilePictures/Construction.jpg" alt="image of a brick character wearing a construction vest" width="45px" height="45px"></div>
                         <div id="trending-username3" class="trending-username">@Dylan</div>
-                        <div id="trending-project3" class="trending-project">Spacemann Media Editing Software</div>
+                        <div id="trending-project3" class="trending-project">Spacemann Media Editor</div>
                     </div>
 
                     <div class="column-border"></div>
 
                     <div id="user4" class="trending-user">
-                        <div id="user-pic4" class="user-pic">1</div>
+                        <div id="user-pic4" class="user-pic"><img src="/assets/ProfilePictures/Doctor.jpg" alt="image of a brick character wearing a doctor's coat" width="45px" height="45px"></div>
                         <div id="trending-username4" class="trending-username">@BigBear</div>
                         <div id="trending-project4" class="trending-project">Soule Blender Video Game</div>
                     </div>
@@ -207,9 +280,9 @@
                     <div class="column-border"></div>
 
                     <div id="user5" class="trending-user">
-                        <div id="user-pic5" class="user-pic">1</div>
-                        <div id="trending-username5" class="trending-username">@MrAnderson</div>
-                        <div id="trending-project5" class="trending-project"></div>
+                        <div id="user-pic5" class="user-pic"><img src="/assets/ProfilePictures/Sombrero.jpg" alt="image of a brick character wearing a sombrero" width="45px" height="45px"></div>
+                        <div id="trending-username5" class="trending-username">@MrManderson</div>
+                        <div id="trending-project5" class="trending-project">Baruug Media Encoder</div>
                     </div>
                 </div>
             </div>
